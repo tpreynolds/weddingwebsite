@@ -1,9 +1,19 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503   
+  primary: 00cc66
+  secondary: 0066cc   
   secondary-dark: 333
   muted: 777
+
+colors:
+  lightblue: 0066cc
+  blue: 00205B
+  green: 00843d
+  lightgreen: 00cc66
+  lightgreencomp: 24b36b
+  gray: 97999b
+  yellow: fed136
+  darkyellow: fec503
 
 # Font Families
 font:
