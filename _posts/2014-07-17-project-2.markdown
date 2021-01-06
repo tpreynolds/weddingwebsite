@@ -4,12 +4,38 @@ subtitle: December 2020
 layout: default
 modal-id: 2
 date: 2021-01-04
-img: escape.png
-thumbnail: escape-thumbnail.png
+images:
+  - image_path: /img/portfolio/R+T_Engagement-1.jpg
+    title: Img1
+  - image_path: /img/portfolio/R+T_Engagement-11.jpg
+    title: Img2
+  - image_path: /img/portfolio/R+T_Engagement-16.jpg
+    title: Img3
+  - image_path: /img/portfolio/R+T_Engagement-32.jpg
+    title: Img4
+  - image_path: /img/portfolio/R+T_Engagement-36.jpg
+    title: Img5
+  - image_path: /img/portfolio/R+T_Engagement-59.jpg
+    title: Img6
+  - image_path: /img/portfolio/R+T_Engagement-66.jpg
+    title: Img7
+  - image_path: /img/portfolio/R+T_Engagement-70.jpg
+    title: Img8
+  - image_path: /img/portfolio/R+T_Engagement-78.jpg
+    title: Img9
+  - image_path: /img/portfolio/R+T_Engagement-111.jpg
+    title: Img10
+thumbnail: R+T_Engagement-1-thumbnail.jpg
 alt: image-alt
-project-date: January 2021
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: December 2020
+photographer: Alix Gould
+link: https://alixgould.com/
+description: A few of our favorite shots from the engagement shoot!
 
 ---
+
+<ul class="photo-gallery" style="list-style-type:none;">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title}}" style="width:80%;height:auto;"/></li>
+  {% endfor %}
+</ul>

@@ -18,6 +18,10 @@ body {
     color: #{{ site.data.template.color.primary }};
 }
 
+.text-reg {
+    color: #{{ site.data.template.colors.darkyellow }};
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -120,14 +124,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #{{ site.data.template.colors.lightgreen }};
+    border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.data.template.colors.lightgreen }};
+    background-color: #{{ site.data.template.color.primary }};
 }
 
 .btn-xl:hover,
@@ -135,9 +139,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #{{ site.data.template.colors.lightblue }};
+    border-color: #{{ site.data.template.color.secondary }};
     color: #fff;
-    background-color: #{{ site.data.template.colors.lightblue }};
+    background-color: #{{ site.data.template.color.secondary }};
 }
 
 .btn-xl:active,
@@ -178,20 +182,20 @@ fieldset[disabled] .btn-xl.active {
 /* This is for the top-left text*/
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.colors.lightgreen }};
+    color: #{{ site.data.template.color.primary }};
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.data.template.colors.green }};
+    color: #{{ site.data.template.color.secondary }};
 }
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,0);
-    background-color: #222;
-    border-radius: 6pt;
+    /*background-color: #222;*/
+    /*border-radius: 6pt;*/
 }
 
 .navbar-default .navbar-toggle {
@@ -214,7 +218,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
-    color: #{{ site.data.template.colors.lightgreen }};
+    color: #{{ site.data.template.color.primary }};
     -webkit-transition: all ease .25s;
     -moz-transition: all ease .25s;
     transition: all ease .25s;
@@ -223,19 +227,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.colors.lightgreencomp }};
+    color: #{{ site.data.template.color.secondary }};
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0; /* square */
     color: #fff; /* text color */
-    background-color: #{{ site.data.template.colors.lightblue }};
+    background-color: #{{ site.data.template.color.secondary }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff; /* text color */
-    background-color: #{{ site.data.template.colors.lightblue }};
+    background-color: #{{ site.data.template.color.secondary }};
 }
 
 @media(min-width:768px) {
@@ -492,17 +496,17 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-image {
-    z-index: 100;
+    /*z-index: 100;*/
     position: absolute;
     left: 0;
     width: 80px;
-    height: 80px;
+    height: 160px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
-    border-radius: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    /*border: 7px solid #f1f1f1;*/
+    /*border-radius: 6pt;*/
+    /*text-align: center;*/
+    /*color: #fff;*/
+    /*background-color: #{{ site.data.template.color.primary }};*/
 }
 
 .timeline>li .timeline-image h4 {
@@ -660,68 +664,68 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+section#registry {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#registry .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+section#registry .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+section#registry .form-group input,
+section#registry .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+section#registry .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+section#registry .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+section#registry .form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+section#registry::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+section#registry:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+section#registry::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+section#registry:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+section#registry .text-danger {
     color: #e74c3c;
 }
 
@@ -868,4 +872,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.container-foot {
+    height: 40px;
 }
